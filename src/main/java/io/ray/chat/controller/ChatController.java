@@ -8,8 +8,9 @@ import org.springframework.stereotype.Controller;
 public class ChatController {
 
 	@MessageMapping("chat")
-	@SendTo("http/chat")
+	@SendTo("topic/chat")
 	public String country(String content) {
+		
 		return content;
 	}
 
