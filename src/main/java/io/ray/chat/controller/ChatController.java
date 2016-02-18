@@ -10,7 +10,6 @@ public class ChatController {
 	@MessageMapping("chat")
 	@SendTo("topic/chat")
 	public String country(String content) {
-		
 		return content;
 	}
 
